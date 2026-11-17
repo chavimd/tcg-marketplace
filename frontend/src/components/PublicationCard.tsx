@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { formatEuro } from "../lib/format";
+import { formatBs } from "../lib/format";
 import type { Publicacion } from "../lib/types";
 import { CardFace, type CardSubject } from "./CardFace";
 
@@ -40,7 +40,7 @@ export function PublicationCard({ publicacion }: { publicacion: Publicacion }) {
       </div>
       <div className="mt-1 flex items-baseline justify-between gap-3 text-[0.8125rem] text-muted">
         <span>Valor ref.</span>
-        <span className="tabnum shrink-0">{formatEuro(publicacion.precioUnitario)}</span>
+        <span className="tabnum shrink-0">{formatBs(publicacion.precioUnitario)}</span>
       </div>
     </article>
   );

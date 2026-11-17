@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" fill="none">
+  <defs>
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0e1112" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0e1112" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="packBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="foilRibbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="180" cy="396" rx="76" ry="12" fill="url(#shadow)"/>
+  <!-- Top & bottom crimps -->
+  <rect x="108" y="54" width="144" height="22" rx="2" fill="#cbd5e1" stroke="#0e1112" stroke-width="2.5"/>
+  <line x1="120" y1="54" x2="120" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="136" y1="54" x2="136" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="152" y1="54" x2="152" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="168" y1="54" x2="168" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="184" y1="54" x2="184" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="200" y1="54" x2="200" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="216" y1="54" x2="216" y2="76" stroke="#64748b" stroke-width="2"/>
+  <line x1="232" y1="54" x2="232" y2="76" stroke="#64748b" stroke-width="2"/>
+  <rect x="108" y="352" width="144" height="22" rx="2" fill="#cbd5e1" stroke="#0e1112" stroke-width="2.5"/>
+  <!-- Pack pouch -->
+  <rect x="104" y="74" width="152" height="280" rx="4" fill="url(#packBody)" stroke="#0e1112" stroke-width="2.5"/>
+  <!-- Gloss highlight -->
+  <path d="M116 84 L152 84 L134 342 L116 342 Z" fill="#ffffff" opacity="0.12"/>
+  <!-- Emblem -->
+  <polygon points="180,126 236,196 180,266 124,196" fill="url(#foilRibbon)" stroke="#0e1112" stroke-width="2"/>
+  <circle cx="180" cy="196" r="28" fill="#0e1112"/>
+  <polygon points="180,176 196,196 180,216 164,196" fill="#fde047"/>
+  <!-- Label -->
+  <rect x="116" y="286" width="128" height="44" rx="3" fill="#0e1112" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="180" y="305" text-anchor="middle" fill="#fde047" font-family="Arial Narrow, sans-serif" font-weight="800" font-size="13" letter-spacing="1">BOOSTER PACK</text>
+  <text x="180" y="321" text-anchor="middle" fill="#ffffff" font-family="Arial Narrow, sans-serif" font-weight="700" font-size="11">10 CARTAS SELLADAS</text>
+</svg>

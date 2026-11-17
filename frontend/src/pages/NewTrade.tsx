@@ -4,7 +4,7 @@ import { CardFace } from "../components/CardFace";
 import { publicationSubject } from "../components/PublicationCard";
 import { Empty, ErrorNote, Loading } from "../components/ui";
 import { api, ApiError, queryString } from "../lib/api";
-import { formatEuro, plural } from "../lib/format";
+import { formatBs, plural } from "../lib/format";
 import type { Propuesta, Publicacion } from "../lib/types";
 import { useResource } from "../lib/useResource";
 
@@ -189,7 +189,7 @@ export function NewTrade() {
                               {itemSubject.setNombre ?? "Sin set"} · {item.stock} disp.
                             </span>
                             <span className="tabnum block text-xs text-muted">
-                              {formatEuro(item.precioUnitario)}
+                              {formatBs(item.precioUnitario)}
                             </span>
                           </span>
                         </label>
@@ -231,7 +231,7 @@ export function NewTrade() {
                 {subject.setNombre ?? "Sin set"} · {subject.rareza ?? "Sin rareza"}
               </p>
               <p className="tabnum mt-1 text-sm text-muted">
-                {formatEuro(objetivo.precioUnitario)} por unidad
+                {formatBs(objetivo.precioUnitario)} por unidad
               </p>
 
               <label className="mt-3 flex items-center gap-2 text-sm">
@@ -256,11 +256,11 @@ export function NewTrade() {
           <dl className="mt-4 space-y-2 text-sm">
             <div className="flex items-center justify-between gap-3">
               <dt className="text-muted">Valor de lo que ofreces</dt>
-              <dd className="tabnum font-semibold">{formatEuro(ofertaTotal)}</dd>
+              <dd className="tabnum font-semibold">{formatBs(ofertaTotal)}</dd>
             </div>
             <div className="flex items-center justify-between gap-3">
               <dt className="text-muted">Valor de lo que pides</dt>
-              <dd className="tabnum font-semibold">{formatEuro(pedidoTotal)}</dd>
+              <dd className="tabnum font-semibold">{formatBs(pedidoTotal)}</dd>
             </div>
           </dl>
           <p className="hint mt-2">

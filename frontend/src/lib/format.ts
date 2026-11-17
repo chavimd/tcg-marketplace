@@ -1,19 +1,22 @@
-const dateFormatter = new Intl.DateTimeFormat("es-ES", {
+const dateFormatter = new Intl.DateTimeFormat("es-BO", {
   day: "2-digit",
   month: "short",
   year: "numeric",
 });
 
-const dateTimeFormatter = new Intl.DateTimeFormat("es-ES", {
+const dateTimeFormatter = new Intl.DateTimeFormat("es-BO", {
   day: "2-digit",
   month: "short",
   hour: "2-digit",
   minute: "2-digit",
 });
 
-const euroFormatter = new Intl.NumberFormat("es-ES", {
+// El mercado es boliviano: todos los importes se muestran en bolivianos (BOB).
+const bsFormatter = new Intl.NumberFormat("es-BO", {
   style: "currency",
-  currency: "EUR",
+  currency: "BOB",
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
 });
 
 export function formatDate(value: string): string {
@@ -26,8 +29,8 @@ export function formatDateTime(value: string): string {
   return Number.isNaN(date.getTime()) ? "—" : dateTimeFormatter.format(date);
 }
 
-export function formatEuro(value: number): string {
-  return euroFormatter.format(value);
+export function formatBs(value: number): string {
+  return bsFormatter.format(value);
 }
 
 /** Stable slug used to pick a per-game accent in the card face. */

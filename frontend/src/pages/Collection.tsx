@@ -4,7 +4,7 @@ import { CardFace } from "../components/CardFace";
 import { publicationSubject } from "../components/PublicationCard";
 import { Empty, ErrorNote, Loading, StatusBadge } from "../components/ui";
 import { api, ApiError } from "../lib/api";
-import { formatEuro } from "../lib/format";
+import { formatBs } from "../lib/format";
 import type { Publicacion } from "../lib/types";
 import { useResource } from "../lib/useResource";
 
@@ -100,7 +100,7 @@ export function Collection() {
                   </div>
                   <div className="mt-1 flex items-center justify-between text-[0.8125rem] text-muted">
                     <span>Valor ref.</span>
-                    <span className="tabnum">{formatEuro(item.precioUnitario)}</span>
+                    <span className="tabnum">{formatBs(item.precioUnitario)}</span>
                   </div>
                   <button
                     type="button"

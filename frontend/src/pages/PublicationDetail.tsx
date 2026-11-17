@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { CardFace } from "../components/CardFace";
 import { publicationSubject } from "../components/PublicationCard";
 import { ErrorNote, Loading, StatusBadge } from "../components/ui";
-import { formatDate, formatEuro } from "../lib/format";
+import { formatDate, formatBs } from "../lib/format";
 import { useAuth } from "../lib/auth";
 import type { Publicacion } from "../lib/types";
 import { useResource } from "../lib/useResource";
@@ -65,7 +65,7 @@ export function PublicationDetail() {
           <div className="mt-4 flex items-center justify-between border-t border-rule pt-3">
             <div>
               <p className="text-xs text-muted">Valor de referencia</p>
-              <p className="tabnum text-xl font-semibold">{formatEuro(data.precioUnitario)}</p>
+              <p className="tabnum text-xl font-semibold">{formatBs(data.precioUnitario)}</p>
             </div>
             <div className="text-right">
               <p className="text-xs text-muted">Disponibles</p>

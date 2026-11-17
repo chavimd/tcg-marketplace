@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" fill="none">
+  <defs>
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0e1112" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#0e1112" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="boxGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f3d2e"/>
+      <stop offset="50%" stop-color="#111618"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="45%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="182" cy="390" rx="112" ry="15" fill="url(#shadow)"/>
+  <!-- Header display card -->
+  <path d="M108 66 L252 66 L260 156 L100 156 Z" fill="#133d32" stroke="#0e1112" stroke-width="2.5"/>
+  <path d="M118 76 L242 76 L248 144 L112 144 Z" fill="url(#foil)" opacity="0.92"/>
+  <polygon points="180,82 214,126 146,126" fill="#0e1112" opacity="0.88"/>
+  <text x="180" y="120" text-anchor="middle" fill="#fbbf24" font-family="Arial Narrow, sans-serif" font-weight="800" font-size="18">Δ</text>
+  <!-- Left depth -->
+  <polygon points="62,190 100,156 100,342 62,364" fill="#192022" stroke="#0e1112" stroke-width="2.5"/>
+  <polygon points="70,210 92,190 92,332 70,346" fill="#34d399" opacity="0.24"/>
+  <!-- Two rows of packs -->
+  <polygon points="100,156 260,156 296,190 62,190" fill="#21282a" stroke="#0e1112" stroke-width="2.5"/>
+  <rect x="110" y="138" width="44" height="58" rx="2" fill="#34d399" stroke="#0e1112" stroke-width="2"/>
+  <rect x="158" y="138" width="44" height="58" rx="2" fill="#fbbf24" stroke="#0e1112" stroke-width="2"/>
+  <rect x="206" y="138" width="44" height="58" rx="2" fill="#38bdf8" stroke="#0e1112" stroke-width="2"/>
+  <!-- Front panel -->
+  <polygon points="100,190 296,190 296,364 100,364" fill="url(#boxGrad)" stroke="#0e1112" stroke-width="2.5"/>
+  <rect x="100" y="190" width="196" height="32" fill="url(#foil)"/>
+  <text x="198" y="211" text-anchor="middle" fill="#0e1112" font-family="Arial Narrow, sans-serif" font-weight="800" font-size="15" letter-spacing="1.2">DOMINIO DELTA · 36 SOBRES</text>
+  <rect x="118" y="238" width="160" height="78" rx="4" fill="#0e1112" stroke="#34d399" stroke-width="2"/>
+  <path d="M130 302 L168 252 L198 282 L236 244 L266 302 Z" fill="url(#foil)" opacity="0.85"/>
+  <rect x="128" y="328" width="140" height="22" rx="2" fill="#fbbf24"/>
+  <text x="198" y="343" text-anchor="middle" fill="#0e1112" font-family="Arial Narrow, sans-serif" font-weight="800" font-size="12" letter-spacing="1">BOOSTER BOX</text>
+</svg>

@@ -104,24 +104,24 @@ INSERT INTO publicacion_inventario
     (usuario_id, carta_id, tipo_item, estado_conservacion, precio_unitario, stock, estado_publicacion)
 SELECT u.id, c.id, 'CARTA', v.estado_conservacion, v.precio, v.stock, v.estado
 FROM (VALUES
-    ('bob',   'Charizard',              '4/102',   'Base Set',           'Near Mint',      320.00, 1, 'DISPONIBLE'),
-    ('bob',   'Pikachu',                '58/102',  'Base Set',           'Lightly Played',  24.00, 3, 'DISPONIBLE'),
-    ('bob',   'Blastoise',              '2/102',   'Base Set',           'Near Mint',      210.00, 1, 'DISPONIBLE'),
-    ('bob',   'Black Lotus',            '232',     'Alpha',              'Played',        9800.00, 1, 'DISPONIBLE'),
+    ('bob',   'Charizard',              '4/102',   'Base Set',           'Near Mint',     2400.00, 1, 'DISPONIBLE'),
+    ('bob',   'Pikachu',                '58/102',  'Base Set',           'Lightly Played', 180.00, 3, 'DISPONIBLE'),
+    ('bob',   'Blastoise',              '2/102',   'Base Set',           'Near Mint',     1450.00, 1, 'DISPONIBLE'),
+    ('bob',   'Black Lotus',            '232',     'Alpha',              'Played',      690000.00, 1, 'DISPONIBLE'),
 
-    ('carol', 'Umbreon VMAX',           '215/203', 'Evolving Skies',     'Near Mint',      480.00, 1, 'DISPONIBLE'),
-    ('carol', 'Rayquaza VMAX',          '218/203', 'Evolving Skies',     'Near Mint',      390.00, 1, 'DISPONIBLE'),
-    ('carol', 'Dark Magician',          'LOB-005', 'Legend of Blue Eyes','Near Mint',       55.00, 2, 'DISPONIBLE'),
-    ('carol', 'Blue-Eyes White Dragon', 'LOB-001', 'Legend of Blue Eyes','Lightly Played',  80.00, 1, 'DISPONIBLE'),
+    ('carol', 'Umbreon VMAX',           '215/203', 'Evolving Skies',     'Near Mint',     5500.00, 1, 'DISPONIBLE'),
+    ('carol', 'Rayquaza VMAX',          '218/203', 'Evolving Skies',     'Near Mint',     3800.00, 1, 'DISPONIBLE'),
+    ('carol', 'Dark Magician',          'LOB-005', 'Legend of Blue Eyes','Near Mint',      700.00, 2, 'DISPONIBLE'),
+    ('carol', 'Blue-Eyes White Dragon', 'LOB-001', 'Legend of Blue Eyes','Lightly Played', 950.00, 1, 'DISPONIBLE'),
 
-    ('dana',  'Dark Magician Girl',     'MFC-000', 'Magician''s Force',  'Near Mint',      160.00, 1, 'DISPONIBLE'),
-    ('dana',  'Exodia the Forbidden One','LOB-124','Legend of Blue Eyes','Played',         120.00, 1, 'DISPONIBLE'),
-    ('dana',  'Ragavan, Nimble Pilferer','138',    'Modern Horizons 2',  'Near Mint',       75.00, 2, 'DISPONIBLE'),
-    ('dana',  'Wrenn and Six',          '217',     'Modern Horizons',    'Near Mint',       95.00, 1, 'DISPONIBLE'),
-    ('dana',  'Mewtwo',                 '10/102',  'Base Set',           'Near Mint',       95.00, 1, 'DISPONIBLE'),
+    ('dana',  'Dark Magician Girl',     'MFC-000', 'Magician''s Force',  'Near Mint',     2200.00, 1, 'DISPONIBLE'),
+    ('dana',  'Exodia the Forbidden One','LOB-124','Legend of Blue Eyes','Played',         850.00, 1, 'DISPONIBLE'),
+    ('dana',  'Ragavan, Nimble Pilferer','138',    'Modern Horizons 2',  'Near Mint',      600.00, 2, 'DISPONIBLE'),
+    ('dana',  'Wrenn and Six',          '217',     'Modern Horizons',    'Near Mint',      750.00, 1, 'DISPONIBLE'),
+    ('dana',  'Mewtwo',                 '10/102',  'Base Set',           'Near Mint',     1000.00, 1, 'DISPONIBLE'),
 
-    ('demo',  'Lightning Bolt',         '161',     'Alpha',              'Near Mint',       45.00, 4, 'DISPONIBLE'),
-    ('demo',  'Counterspell',           '54',      'Alpha',              'Lightly Played',  20.00, 6, 'OCULTA')
+    ('demo',  'Lightning Bolt',         '161',     'Alpha',              'Near Mint',     3200.00, 4, 'DISPONIBLE'),
+    ('demo',  'Counterspell',           '54',      'Alpha',              'Lightly Played', 1200.00, 6, 'OCULTA')
 ) AS v(username, nombre, numero_set, set_nombre, estado_conservacion, precio, stock, estado)
 JOIN usuarios u ON u.username = v.username
 JOIN cartas_catalogo c

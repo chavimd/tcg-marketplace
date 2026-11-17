@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" fill="none">
+  <defs>
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0e1112" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0e1112" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#143829"/>
+      <stop offset="55%" stop-color="#0e1112"/>
+      <stop offset="100%" stop-color="#1d5f43"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7c948"/>
+      <stop offset="50%" stop-color="#3dd598"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#222a2c"/>
+      <stop offset="100%" stop-color="#0e1112"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="180" cy="392" rx="92" ry="14" fill="url(#shadow)"/>
+  <!-- Back header flap -->
+  <path d="M128 74 L216 58 L216 146 L128 162 Z" fill="#184a35" stroke="#0e1112" stroke-width="2.5"/>
+  <path d="M138 86 L206 74 L206 130 L138 142 Z" fill="url(#accent)" opacity="0.9"/>
+  <circle cx="172" cy="106" r="18" fill="#0e1112"/>
+  <text x="172" y="112" text-anchor="middle" fill="#f7c948" font-family="Arial Narrow, sans-serif" font-weight="700" font-size="14">Δ</text>
+  <!-- Left face -->
+  <polygon points="94,162 128,144 128,342 94,360" fill="url(#side)" stroke="#0e1112" stroke-width="2.5"/>
+  <polygon points="101,182 121,171 121,320 101,331" fill="#3dd598" opacity="0.22"/>
+  <!-- Top open tray with booster packs -->
+  <polygon points="128,144 248,162 214,180 94,162" fill="#232a2c" stroke="#0e1112" stroke-width="2.5"/>
+  <polygon points="134,126 168,120 168,162 134,168" fill="#f7c948" stroke="#0e1112" stroke-width="2"/>
+  <polygon points="168,131 202,125 202,167 168,173" fill="#3dd598" stroke="#0e1112" stroke-width="2"/>
+  <polygon points="202,136 236,130 236,172 202,178" fill="#0ea5e9" stroke="#0e1112" stroke-width="2"/>
+  <!-- Front face -->
+  <polygon points="128,162 248,162 248,360 128,360" fill="url(#front)" stroke="#0e1112" stroke-width="2.5"/>
+  <polygon points="128,162 248,162 248,194 128,194" fill="url(#accent)"/>
+  <path d="M142 225 L234 210 L234 298 L142 314 Z" fill="#152220" stroke="#3dd598" stroke-width="2"/>
+  <path d="M150 282 L185 232 L205 260 L226 226 L226 290 L150 298 Z" fill="url(#accent)" opacity="0.85"/>
+  <rect x="142" y="320" width="92" height="24" rx="2" fill="#f7c948"/>
+  <text x="188" y="336" text-anchor="middle" fill="#0e1112" font-family="Arial Narrow, sans-serif" font-weight="800" font-size="11" letter-spacing="1">HALF BOOSTER</text>
+  <text x="188" y="183" text-anchor="middle" fill="#0e1112" font-family="Arial Narrow, sans-serif" font-weight="800" font-size="13" letter-spacing="1">DOMINIO DELTA</text>
+</svg>

@@ -5,7 +5,7 @@ import { CardFace } from "../components/CardFace";
 import { ErrorNote, Loading, StatusBadge } from "../components/ui";
 import { api, ApiError, getToken, websocketUrl } from "../lib/api";
 import { useAuth } from "../lib/auth";
-import { formatDateTime, formatEuro } from "../lib/format";
+import { formatDateTime, formatBs } from "../lib/format";
 import type { ItemTrade, MensajeChat, Propuesta } from "../lib/types";
 import { useResource } from "../lib/useResource";
 
@@ -186,7 +186,7 @@ export function TradeDetail() {
             <h2 className="text-2xl">
               Ofrece <span className="normal-case">@{data.emisor.username}</span>
             </h2>
-            <span className="tabnum text-sm text-muted">{formatEuro(valorTotal(ofertas))}</span>
+            <span className="tabnum text-sm text-muted">{formatBs(valorTotal(ofertas))}</span>
           </div>
           <ul className="mt-4 divide-y divide-rule border-y border-rule">
             {ofertas.length === 0 ? (
@@ -205,7 +205,7 @@ export function TradeDetail() {
                   <div className="shrink-0 text-right">
                     <p className="tabnum text-sm font-semibold">{item.cantidad} ud.</p>
                     <p className="tabnum text-xs text-muted">
-                      {formatEuro(item.precioUnitario * item.cantidad)}
+                      {formatBs(item.precioUnitario * item.cantidad)}
                     </p>
                   </div>
                 </li>
@@ -219,7 +219,7 @@ export function TradeDetail() {
             <h2 className="text-2xl">
               Pide a <span className="normal-case">@{data.receptor.username}</span>
             </h2>
-            <span className="tabnum text-sm text-muted">{formatEuro(valorTotal(solicitudes))}</span>
+            <span className="tabnum text-sm text-muted">{formatBs(valorTotal(solicitudes))}</span>
           </div>
           <ul className="mt-4 divide-y divide-rule border-y border-rule">
             {solicitudes.length === 0 ? (
@@ -238,7 +238,7 @@ export function TradeDetail() {
                   <div className="shrink-0 text-right">
                     <p className="tabnum text-sm font-semibold">{item.cantidad} ud.</p>
                     <p className="tabnum text-xs text-muted">
-                      {formatEuro(item.precioUnitario * item.cantidad)}
+                      {formatBs(item.precioUnitario * item.cantidad)}
                     </p>
                   </div>
                 </li>

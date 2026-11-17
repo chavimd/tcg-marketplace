@@ -1,0 +1,38 @@
+server:
+  port: ${SERVER_PORT:8083}
+
+spring:
+  application:
+    name: trade-service
+  web:
+    error:
+      # Boot 4 movió esta propiedad de server.error a spring.web.error.
+      include-message: always
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:tcg_db}}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      # El esquema lo controla Flyway desde auth-service.
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:tcg-local-development-secret-change-me}

@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:chat_test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  jwt:
+    secret: a-test-secret-that-is-at-least-thirty-two-bytes
+  trade-service:
+    url: http://localhost:8083
+  websocket:
+    allowed-origins: http://localhost:3000

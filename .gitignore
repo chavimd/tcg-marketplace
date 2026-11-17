@@ -1,0 +1,26 @@
+# Credenciales y configuración local
+.env
+.env.local
+.env.*.local
+
+# Builds de Maven / Java
+target/
+*.class
+
+# Builds de Node / frontend
+node_modules/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
